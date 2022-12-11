@@ -68,8 +68,8 @@ int largestSubgrid(vector<vector<int>> grid, int maxSum) {
         if (y1 > 0) {
             sum -= pref[x2][y1 - 1];
         }
-        if (x1 > 0 && y2 > 0) {
-            sum += pref[x1 - 1][y2 - 1];
+        if (x1 > 0 && y1 > 0) {
+            sum += pref[x1 - 1][y1 - 1];
         }
         return sum;
     };
